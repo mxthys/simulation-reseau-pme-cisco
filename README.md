@@ -1,9 +1,26 @@
 # simulation-reseau-pme-cisco
 
-Ce projet est une simulation d'un réseau d'entreprise réalisée 
-sur Cisco Packet Tracer dans le cadre de ma préparation au 
-BTS SIO option SISR. Il représente l'infrastructure réseau 
-d'une petite entreprise avec plusieurs services.
+Ce projet est une simulation d'une infrastructure réseau de PME réalisée 
+sur Cisco Packet Tracer dans le cadre de ma préparation au BTS SIO option SISR.
+Le réseau est composé de deux sous-réseaux interconnectés via un routeur,
+avec des services DHCP, DNS et Web.
+
+Équipement        | Adresse IP      | Rôle
+------------------|-----------------|------------------
+Serveur0          | 192.168.0.1     | Serveur de fichiers
+PC0               | 192.168.0.2     | Poste utilisateur
+Laptop0           | 192.168.0.3     | Poste utilisateur
+Switch0           | -               | Commutateur réseau 1
+Router0           | 192.168.0.254   | Passerelle réseau 1
+Router0           | 192.168.100.254 | Passerelle réseau 2
+Switch1           | -               | Commutateur réseau 2
+PC1               | 192.168.100.1   | Poste utilisateur
+PC2               | 192.168.100.2   | Poste utilisateur
+Laptop1           | Attribution DHCP| Poste utilisateur
+Laptop2           | Attribution DHCP| Poste utilisateur
+Serveur DHCP      | 192.168.100.250 | Attribution automatique des IP + résolution des noms
+Serveur web       | 192.168.100.249 | Hébergement site interne
+
 
 1 Shéma du réseau complet
 <img width="1280" height="565" alt="01-schema-reseau-complet" src="https://github.com/user-attachments/assets/ec27bcf1-2c75-4fe3-af81-543d5914df6f" />
